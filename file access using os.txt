@@ -1,0 +1,17 @@
+import os   
+os.getcwd()   
+ 
+import os 
+os.chdir('C:/Users/admin/Documents') 
+print(os.getcwd()) 
+import os      
+#creating a new directory with the name new     
+os.mkdir(“New Folder”) 
+ 
+os.rename("abc.txt","demofile.txt")   
+print("The above code renamed current abc.txt to demofile.txt") 
+import os 
+os.remove("demofile.txt") 
+print(“the file has been removed”) 
+os.rmdir(“New Folder”) 
+print(“the folder has been deleted”)

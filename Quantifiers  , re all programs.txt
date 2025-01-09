@@ -1,0 +1,140 @@
+import re 
+matcher=re.finditer("a","abaabaaab") 
+for match in matcher: 
+   print(match.start(),"......",match.group())
+
+
+
+Source Code - # Program to demonstrate dot metacharacter in python 
+ 
+import re 
+ 
+words = ('seven', 'even', 'prevent', 'revenge', 'maven',  
+    'eleven', 'amen', 'event') 
+ 
+pattern = re.compile(r'.even') 
+ 
+for word in words: 
+    if re.match(pattern, word): 
+        print(f'The {word} matches')
+
+
+
+
+
+
+
+
+
+Source Code - # Program to extract numbers from a string using RegEx. (re.findall()) 
+ 
+ 
+# Program to extract numbers from a string 
+ 
+import re 
+ 
+string = 'hello 12 hi 89. Howdy 34' 
+pattern = '\d+' 
+ 
+result = re.findall(pattern, string)  
+print(result) 
+
+
+ 
+
+
+
+
+
+Source Code - # Program to split a string using RegEx. (re.split())
+#Example 2: re.split() 
+ 
+import re 
+ 
+string = 'Twelve:12 Eighty nine:89.' 
+pattern = '\d+' 
+ 
+result = re.split(pattern, string)  
+print(result) 
+ 
+# Output: ['Twelve:', ' Eighty nine:', '.'] 
+
+
+
+
+
+
+
+
+ 
+Source Code - # Program to Program to remove all whitespaces using RegEx. (re.sub()) 
+ 
+#Example 3: re.sub() 
+ 
+# Program to remove all whitespaces 
+import re 
+ 
+# multiline string 
+string = 'abc 12\de 23 \n f45 6' 
+ 
+# matches all whitespace characters 
+pattern = '\s+' 
+ 
+# empty string 
+replace = '' 
+
+
+
+
+
+
+
+
+
+
+
+Source Code - # Program to Program to demonstrate re.search() 
+ 
+#Example 5: re.search() 
+ 
+import re 
+string = "Python is fun" 
+# check if 'Python' is at the beginning 
+match = re.search('\APython', string) 
+ 
+if match: 
+print("pattern found inside the string") 
+else: 
+print("pattern not found")   
+ 
+# Output: pattern found inside the string
+ 
+new_string = re.sub(pattern, replace, string)  
+print(new_string) 
+
+
+
+
+
+
+b) Write a python Program to call data member and function using classes and objects 
+
+ 
+class Person: 
+  def __init__(self, name, age): 
+    self.name = name 
+    self.age = age 
+ 
+  def myfunc(self): 
+    print("Hello my name is " + self.name) 
+ 
+p1 = Person("John", 36) 
+p1.myfunc() 
+print(p1.age) 
+
+
+
+
+
+
+

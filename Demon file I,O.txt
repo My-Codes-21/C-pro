@@ -1,0 +1,26 @@
+#Create a new file  
+f = open("itworkshop.txt", "w") 
+f = open("abc.txt", "w") 
+#Write to an Existing File 
+#Open the file "demofile2.txt" and append content to the file: 
+f = open("itworkshop.txt", "a") 
+f.write("Now the file has more content!") 
+f.close() 
+ 
+#open and read the file after the appending: 
+f = open("itworkshop.txt", "r") 
+print(f.read()) 
+ 
+# Close file 
+f = open("itworkshop.txt", "r") 
+print(f.readline()) 
+f.close() 
+#Check if file exists, then delete it: 
+import os 
+if os.path.exists("abcd.txt"): 
+   os.remove("abc.txt") 
+else: 
+     print("The file does not exist") 
+#Delete file 
+import os 
+os.remove("abc.txt") 
